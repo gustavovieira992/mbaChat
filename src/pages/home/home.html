@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>MBAChat</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="signInPage">
+
+
+  <div id="signInForm">
+    <ion-list>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="email" [(ngModel)]="loginForm.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="loginForm.name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <button ion-button large block (click)="loginUser()">Sign In</button>
+      </ion-item>
+
+    </ion-list>
+  </div>
+
+
+
+</ion-content>
